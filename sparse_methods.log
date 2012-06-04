@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.6.22)  1 JUN 2012 14:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.6.22)  4 JUN 2012 16:39
 entering extended mode
  %&-line parsing enabled.
 **sparse_methods.tex
@@ -122,14 +122,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 ))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
-
-(/usr/share/texmf-texlive/tex/latex/base/ascii.def
-File: ascii.def 2008/03/30 v1.1d Input encoding file
-))
 (/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -139,22 +131,29 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 ) (./sparse_methods.aux)
 \openout1 = `sparse_methods.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 11.
 
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
 -------------------- Geometry parameters
@@ -196,32 +195,49 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 21.
+ (./sparse_methods.bbl
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¶ in font phvr7t!
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 8.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sparse_methods.aux) ) 
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 39.
+ [2]
+(./sparse_methods.aux) ) 
 Here is how much of TeX's memory you used:
- 1734 strings out of 495061
- 21002 string characters out of 1182621
- 70725 words of memory out of 3000000
- 4917 multiletter control sequences out of 15000+50000
- 8584 words of font info for 33 fonts, out of 3000000 for 9000
+ 1820 strings out of 495061
+ 22061 string characters out of 1182621
+ 75195 words of memory out of 3000000
+ 4984 multiletter control sequences out of 15000+50000
+ 29568 words of font info for 63 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 34i,6n,45p,239b,197s stack positions out of 5000i,500n,10000p,200000b,50000s
-</
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on sparse_methods.pdf (1 page, 33100 bytes).
+ 35i,13n,45p,734b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}<
+/usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-
+texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/typ
+e1/urw/helvetic/uhvro8a.pfb>
+Output written on sparse_methods.pdf (2 pages, 32351 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
+ 22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

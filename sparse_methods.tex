@@ -1,11 +1,39 @@
 \documentclass{nih}
-\usepackage[ascii]{inputenc}
+%\usepackage[ascii]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{helvet}
+
+\renewcommand{\rmdefault}{phv}
 \author{Ben Kandel}
 \title{Sparse Methods for Medical Imaging Decomposition}
 \begin{document}
 \maketitle
-blah blah blah. 
+\begin{abstract}
+This is the abstract of the document.  In short, it's clear to me that sparsity is cool and worthwhile.  Now what to do with it...
+\end{abstract}
+I have no idea what to do with it. Oh well.  We'll have to figure it out. 
+
+\section{Methodology}
+There are a lot of things.  
+\begin{enumerate}
+\item One basic idea is to do some \textbf{non-linear} sparse dimensionality reduction--not CCA, not PCA, but sparse non-linear dimensionality reduction.  There are about a bajillion non-linear dimensionality reduction techniques \cite{van_der_maaten_dimensionality_2007}.  Rueckert and his gang are using locally linear embedding, a manifold learning technique, for combining multimodal (in this case, imaging + clinical data) for classifying images \cite{wolz_nonlinear_2012}.  Possibly sparse extensions of this (in his case, he used a kind of sparse representation of the image--only looked at the MTL/hippocampus, but it may be interesting to look at extensions of this). 
+\item Contiguous PCA--in practice, NMF does, in theory \cite{donoho_when_2004} give a parts-based representation, when the population you're looking at actually comes from bases and loading vectors.  How this applies to real brains is anyone's guess.  I think that by actually enforcing contiguity constraints, you might be able to do a better job than just hoping for contiguity by doing the l1 norm or something like that. 
+\item Isomap \cite{tenenbaum_global_2000} and LLE \cite{roweis_nonlinear_2000} are both nonlinear dimensionality reduction techniques.  I wonder if they can be extended to have a sparse representation of images.  The way this would work is that you'd get some sort of sparse bases of the images and then calculate graph distances and build graphs.  Ideally, there would be some sort of feedback so that the classification informs the dimensionality reduction so that the reduction/sparsification is optimally tuned to produce a graph that's useful for classification. 
+\end{enumerate}
+
+In general, I think that it's worth thinking a bit about how interested I am in classification (supervised learning) vs unsupervised/exploratory data analysis.  
+
+\section{Applications}
+Possible things to look at: 
+\begin{enumerate}
+\item Cardiac imaging--look at which areas of stenosis/wall thinness are most correlated with some disease outcome
+\item Combining imaging and non-imaging information--Rueckert's recent paper in MedIA, looking at genomics, building prediction models for areas of brain based on genomic clusters
+\item Methodology--explicit contiguity constraints.  I think this may be more important than it appears \ldots also maybe look at fused lasso-type penalties, but in a multivariate matrix decomposition (or for that matter, totally unsupervised context)--don't think that's been done before. 
+\item breast imaging (despina)? may be worthwhile \ldots but not sure if it makes sense \ldots maybe replace her ROI method with sparse PCA, looking for different textures and comparing against disease outcomes. 
+\end{enumerate}
+
+\bibliographystyle{plain}
+\bibliography{kandel_lib}
 \end{document}

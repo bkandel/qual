@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{donoho_when_2004}
+David Donoho and Victoria Stodden.
+\newblock When does {Non-Negative} matrix factorization give a correct
+  decomposition into parts?
+\newblock In Sebastian Thrun, Lawrence Saul, and Bernhard Schölkopf, editors,
+  {\em Advances in Neural Information Processing Systems 16}. {MIT} Press,
+  Cambridge, {MA}, 2004.
+
+\bibitem{roweis_nonlinear_2000}
+{S.T.} Roweis and {L.K.} Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock {\em Science}, 290(5500):2323--2326, 2000.
+
+\bibitem{tenenbaum_global_2000}
+{J.B.} Tenenbaum, V.~De~Silva, and {J.C.} Langford.
+\newblock A global geometric framework for nonlinear dimensionality reduction.
+\newblock {\em Science}, 290(5500):2319--2323, 2000.
+
+\bibitem{van_der_maaten_dimensionality_2007}
+L.~J.~P. Van Der~Maaten, E.~O. Postma, and H.~J. Van Den~Herik.
+\newblock Dimensionality reduction: A comparative review.
+\newblock {\em Published online}, 10(February):1--35, 2007.
+
+\bibitem{wolz_nonlinear_2012}
+Robin Wolz, Paul Aljabar, Joseph~V Hajnal, Jyrki Lotjonen, and Daniel Rueckert.
+\newblock Nonlinear dimensionality reduction combining {MR} imaging with
+  non-imaging information.
+\newblock {\em Medical Image Analysis}, 16(4):819--830, May 2012.
+\newblock {PMID:} 22244037.
+
+\end{thebibliography}
