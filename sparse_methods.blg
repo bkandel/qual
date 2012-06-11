@@ -2,46 +2,44 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: sparse_methods.aux
 The style file: plain.bst
 Database file #1: kandel_lib.bib
-Warning--empty publisher in saxena_non-linear_2004
-You've used 19 entries,
+You've used 1 entry,
             2118 wiz_defined-function locations,
-            621 strings with 8288 characters,
-and the built_in function-call counts, 7778 in all, are:
-= -- 764
-> -- 412
-< -- 4
-+ -- 163
-- -- 141
-* -- 650
-:= -- 1283
-add.period$ -- 62
-call.type$ -- 19
-change.case$ -- 125
+            506 strings with 4150 characters,
+and the built_in function-call counts, 364 in all, are:
+= -- 37
+> -- 13
+< -- 0
++ -- 5
+- -- 4
+* -- 30
+:= -- 66
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 244
-empty$ -- 563
-format.name$ -- 141
-if$ -- 1581
+cite$ -- 1
+duplicate$ -- 11
+empty$ -- 28
+format.name$ -- 4
+if$ -- 71
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 20
-newline$ -- 102
-num.names$ -- 40
-pop$ -- 104
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 9
+num.names$ -- 2
+pop$ -- 2
 preamble$ -- 1
-purify$ -- 107
+purify$ -- 4
 quote$ -- 0
-skip$ -- 172
+skip$ -- 8
 stack$ -- 0
-substring$ -- 601
-swap$ -- 47
-text.length$ -- 4
+substring$ -- 30
+swap$ -- 1
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 74
-warning$ -- 1
-while$ -- 73
-width$ -- 21
-write$ -- 220
-(There was 1 warning)
+type$ -- 4
+warning$ -- 0
+while$ -- 4
+width$ -- 2
+write$ -- 15
