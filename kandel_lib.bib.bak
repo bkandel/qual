@@ -844,6 +844,17 @@ Hippocampal atrophy is a biomarker of initial cognitive decline in {PD}, includi
 	pages = {711--720}
 },
 
+@article{natarajan_sparse_1995,
+	title = {Sparse approximate solutions to linear systems},
+	volume = {24},
+	abstract = {The following problem is considered: given a matrix A in Rm×n, (m rows and n columns), a vector b in Rm, and ε \&gt; 0, compute a vector x satisfying {∥Ax} - b∥2 ≤ ε if such exists, such that x has the fewest number of non-zero entries over all such vectors. It is shown that the problem is {NP-hard}, but that the well-known greedy heuristic is good in that it computes a solution with at most [18 {Opt(ε/2)∥A+∥22} ln(∥b∥2/ε)] non-zero entries, where Opt(ε/2) is the optimum number of nonzero entries at error ε/2, A is the matrix obtained by normalizing each column of A with respect to the L2 norm, and A+ is its pseudo-inverse.},
+	number = {2},
+	journal = {{SIAM} Journal on Computing},
+	author = {Natarajan, {B.K.}},
+	year = {1995},
+	pages = {227--234}
+},
+
 @article{pierpaoli_toward_1996,
 	title = {Toward a quantitative assessment of diffusion anisotropy},
 	volume = {36},
@@ -2334,6 +2345,26 @@ Recommendations {PET} after completion of therapy should be performed at least 3
 	author = {Sundram, F. and Cannon, M. and Doherty, C. P and Barker, G. J and Fitzsimons, M. and Delanty, N. and Cotter, D.},
 	year = {2010},
 	pages = {482}
+},
+
+@article{donoho_for_2006,
+	title = {For most large underdetermined systems of linear equations the minimal ℓ                     1-norm solution is also the sparsest solution},
+	volume = {59},
+	abstract = {We consider linear equations y = Φx where y is a given vector in ℝ 
+                        n and Φ is a given n × m matrix with n \&lt; m ≤ τ n, and we wish to solve for x ε ℝ 
+                        m. We suppose that the columns of Φ are normalized to the unit ℓ 
+                        2-norm, and we place uniform measure on such Φ. We prove the existence of ρ = ρ(τ) \&gt; 0 so that for large n and for all Φ's except a negligible fraction, the following property holds: For every y having a representation y = Φx 
+                        0 by a coefficient vector x 
+                        0 ∈ ℝ 
+                        m with fewer than p · n nonzeros, the solution x 
+                        1 of the ℓ-minimization problem min {\textbar}{\textbar}x{\textbar}{\textbar} 
+                        1 subject to Φx = y is unique and equal to x 
+                        0. In contrast, heuristic attempts to sparsely solve such systems - greedy algorithms and thresholding - perform poorly in this challenging setting. The techniques include the use of random proportional embeddings and almost-spherical sections in Banach space theory, and deviation bounds for the eigenvalues of random Wishart matrices. © 2006 Wiley Periodicals, Inc.},
+	number = {6},
+	journal = {Communications on Pure and Applied Mathematics},
+	author = {Donoho, {D.L.}},
+	year = {2006},
+	pages = {797--829}
 },
 
 @article{rajan_clinical_2011,

@@ -45,57 +45,76 @@ A second major class of dimensionality reduction techniques, in addition to the 
 Following the theoretical formulation of the dimensionality reduction techniques, we aim to implement the techniques and use them to analyze existing neuroimaging databases for connections between neuroanatomical variations and cognitive deficits.  Although a large body of research has focused on using anatomical or functional imaging for predicting the presence or absence of Alzheimer's Disease based on MRI scans, relatively few studies have used  sparse multivariate techniques similar to those proposed here to predict cognitive scores from neuroimaging scans.  Our methods have the potential to find areas of the brain that are maximally effective for predicting cognitive scores, and extensive testing, such as that proposed here, will both offer the opportunity to find novel neurobiological results and also demonstrate the power of the proposed methods to other researchers interested in using these methods.  
 
 \subsection*{Notation}
-To avoid confusion, we will describe the notation we use.  Matrices are denoted by bold capitalized letters ($\mathbf{X}$). If indexed, matrices are still  bolded, so that the $i$'th matrix is $\mathbf{X}_i$. Vectors are capitalized, but not bolded ($V$).  The $i$-th column vector of a matrix is denoted by an capitalized letter with a subscript  ($X_i$), and the entry corresponding to row $i$ and column $j$ is $x_{ij}$.    Scalars are lower-case ($x$), and sets in script ($\mathcal{N}$).  In keeping with standard usage, Greek letters used to denote vectors are not  capitalized, but the intent should be clear from the context.   Estimated values are given hats ($\hat{v}$).  The $\ell_p$ norms $\|x\|_p$ are defined as $\left( \sum_{i=1}^n \vert x_i \vert ^p \right) ^{1/p}$, with the $\ell_0$ pseudo-norm returning the number of non-zero entries in a vector.
+To avoid confusion, we will describe the notation we use.  Matrices are denoted by bold capitalized letters ($\mathbf{X}$). If indexed, matrices are still  bolded, so that the $i$'th matrix is $\mathbf{X}_i$. Vectors are capitalized and italicized, but not bolded ($V$).  The $i$-th column vector of a matrix is denoted by an capitalized letter with a subscript  ($X_i$), and the entry corresponding to row $i$ and column $j$ is $x_{ij}$.    Scalars are lower-case ($x$), and sets in script ($\mathcal{N}$).  In keeping with standard usage, Greek letters used to denote vectors are not  capitalized, but the intent should be clear from the context.   Estimated values are given hats ($\hat{v}$).  The $\ell_p$ norms $\|x\|_p$ are defined as $\left( \sum_{i=1}^n \vert x_i \vert ^p \right) ^{1/p}$, with the $\ell_0$ pseudo-norm returning the number of non-zero entries in a vector.
  
 \section*{Specific Aim I: Regression-Based and Grouped Sparse Linear Medical Image Decomposition}
 \subsection*{Regression-Based Image Decomposition}
 In order to fully appreciate how clinical data can be used to guide medical image decomposition, we will begin by briefly reviewing methods for sparse PCA decompositions.  Once we have shown how unsupervised sparse PCA decompositions are formulated, we will extend the decomposition to situations in which we have outcome data of a continuous variable. 
 
-We represent a set of $n$ mean-centered medical images, each containing $p$ voxels, as an $n \times p$ matrix $\mathbf{X} \in \mathbb{R}^{n \times p}$.  We seek a decomposition of this matrix into a loading matrix $\mathbf{W} \in \mathbb{R}^{n \times r}$ and a basis matrix $\mathbf{V} \in \mathbb{R}^{r \times p}$ so that 
+We represent a set of $n$ mean-centered medical images, each containing $p$ voxels, as an $n \times p$ matrix $\mathbf{X} \in \mathbb{R}^{n \times p}$.  We seek a decomposition of this matrix into a basis matrix $\mathbf{V} \in \mathbb{R}^{p \times r}$ and a loading matrix $\mathbf{W} \in \mathbb{R}^{r \times n}$  so that 
 \begin{equation}
-\mathbf{X} \approx \mathbf{WV}.
+\mathbf{X}^{\mathrm{T}} \approx \mathbf{VW}.
 \end{equation}
-Two  common ways of formulating the PCA objective are finding the projection matrix$\mathbf{V}$ that maximizes the variance of the data matrix,
+Two  common ways of formulating the PCA objective are finding the projection matrix $\mathbf{V}$ that maximizes the variance of the data matrix,
 \begin{equation}
 \hat{\mathbf{V}} =  \underset{\mathbf{V}}{\operatorname{arg\,max}} \, \| \mathbf{XV} \|_2^2,
 \end{equation}
 and finding the projection matrix that minimizes the reconstruction error, 
 \begin{equation}
-\mathbf{\hat{V}} = \underset{\mathbf{V}} {\operatorname{arg \,  min}} \, \| \mathbf{X} - \mathbf{VV}^T \mathbf{X}\|_2^2,
+\mathbf{\hat{V}} = \underset{\mathbf{V}} {\operatorname{arg \,  min}} \, \| \mathbf{X} - \mathbf{VV}^{\mathrm{T}}  \mathbf{X}\|_2^2,
 \label{eqn:reconstruction_error}
 \end{equation}
-subject to the orthogonality constraint $\mathbf{V}^T\mathbf{V}=I$ \cite{hastie_elements_2009}.
+subject to the orthogonality constraint $\mathbf{V}^{\mathrm{T}}\mathbf{V}=\mathbf{I}$, where $\mathbf{I}$ is the identity matrix \cite{hastie_elements_2009}.
 The loading matrix is given by the projections of the data matrix onto the principal components
 \begin{equation}
-\mathbf{W} = \mathbf{X} \mathbf{V}^T,
+\mathbf{W} = \mathbf{XV},
 \end{equation}
 with matrix dimensions as before. 
-An alternative derivation of the principal components is by minimizing the reconstruction error : 
-\begin{equation}
-\mathbf{\hat{V}} = \underset{V} {\operatorname{arg \,  min}} \, \| \mathbf{X} - \mathbf{VV}^T \mathbf{X}\|,
-\end{equation}
-  To enforce sparsity on this decomposition, Zou \cite{zou_sparse_2006} introduces the $\ell_1$ penalty into Equation \ref{eqn:reconstruction_error}.  Introducing a penalty on the $\ell^1$ norm of a solution is a standard convex relaxation to a penalty on the $\ell^0$ ``norm,'' because optimizing over an $\ell^0$ penalty is an NP-hard problem.  (Donoho--citation for l1 here.) To do this, he uses two matrices, $\alpha$ and $\beta$, for use in the reconstruction, and then imposes orthogonality on $\alpha$ and sparsity on $\beta$: 
-\begin{equation}
-(\hat{\alpha},\hat{\beta}) = \underset{\alpha,\, \beta} {\operatorname{arg\,min}} \sum_{i=i}^n \| \mathbf{X}_i - \alpha \beta^T \mathbf{X}_i\|^2 + \lambda \sum_{j=1}^k | \beta_j|,
-\end{equation}
-subject to $\alpha^T \alpha = I$.  The $\hat{\beta}$ obtained from this equation will then satisfy $\hat{\beta} \propto  \mathbf{V}_i$.  In addition to the sparsity constraint, some sort of clustering or smoothing penalty is required to avoid returning scattered non-zero components, as in \cite{batmanghelich_general_2009}.  This gives us an objective function of the form 
-\begin{equation}
-(\hat{\alpha},\hat{\beta}) = \underset{\alpha,\, \beta} {\operatorname{arg\,min}} \sum_{i=i}^n \| \mathbf{X}_i - \alpha \beta^T \mathbf{X}_i\|^2 + \lambda_1 \sum_{j=1}^k | \beta_j| + \lambda_2 p(\beta),
-\end{equation}
-where $p(x)$ is some penalty that discourages spatially incoherent structures and and $\lambda_1$ and $\lambda_2$ are parameters.  
 
-  The simplest type of constraint that discourages scattered non-zero pixels is some sort of smoothing constraint.  This can take the form of a linear difference operator, such as the fused Lasso penalty \cite{tibshirani_sparsity_2005}, which has the form $ \lambda_2 \sum_{j \in \mathcal{N}_i} |x_i - x_j|$, when $\mathcal{N}_i$ is the neighborhood of $x_i$.  Other options include a quadratic smoothing term, as  proposed in \cite{zdunek_blind_2008} and adopted in \cite{batmanghelich_general_2009}, or an $\ell^2$ penalty on the gradient of the vector, as in \cite{hebiri_smooth-lasso_2011}.  Although these options do decrease the likelihood of finding isolated non-zero voxels, they may also force smoothing of the decomposition to an undesirable degree.  I propose to investigate other types of penalties that will encourage clustering.  The first penalty I will examine is one of the form $ \lambda_2 \sum_{j \in \mathcal{N}_i} | |x_i|^\alpha - |x_j|^\alpha|$, where $0 < \alpha \leq 1$.  Although this penalty is non-convex, it comes closer to the desired property of penalizing scattered non-zero voxels, while not enforcing smoothness on the non-zero entries.  Another possibility is to include a regularization based on the curvature of the non-zero components, as is often done in level set-based methods \cite{sethian_fast_1996}.  Optimization of such a constraint would also not be possible using standard convex optimization techniques, would likely require a coordinate descent-type approach.  Experimental studies will be necessary to determine whether the improvement in results from these alternative methods is significant as compared to existing smoothness constraints.
-
-A second extension I propose is to incorporate regression of the projections onto the available clinical data in the objective function.  This will give me a penalty term of the form $\ell(y,\mathbf{X}V^T)$, where $y$ is the available clinical data.  The clinical data can take the form of cognitive scores, disease state (in logistic regression), or other outcomes one is trying to predict.  This can be considered a generalization of the classification loss term considered by \cite{batmanghelich_general_2009}.  Denoting the regression coefficients $\gamma$, so that the standard regression equation becomes $Y = X \gamma$, we can then finally write 
+Enforcing a sparsity constraint on this decomposition amounts to introducing a penalty on number of non-zero terms in the solution, which is known as the  $\ell_0$ pseudo-norm.  Because enforcing constraints on the $\ell_0$ pseudo-norm is in general an NP-hard problem \cite{natarajan_sparse_1995}, a standard convex relaxation is to introduce a penalty on the $\ell_1$ norm instead.  In many cases, this norm actually gives equivalent solutions \cite{donoho_for_2006}.   In the context of linear regression, the $\ell_1$ penalty is commonly known as the ``Lasso'' penalty \cite{tibshirani_regression_1996}, and Zou \cite{zou_sparse_2006} introduced this penalty into the PCA objective function (Equation \ref{eqn:reconstruction_error}) to obtain a sparse version of PCA. To do this, he used two matrices, $\mathbf{A}$ and $\mathbf{B}$, for use in the reconstruction, and then imposed orthogonality on $\mathbf{A}$ and sparsity on $\mathbf{B}$: 
 \begin{equation}
-(\hat{\alpha},\hat{\beta}, \hat{\gamma}) = \underset{\alpha,\, \beta} {\operatorname{arg\,min}} \sum_{i=i}^n \| \mathbf{X}_i - \alpha \beta^T \mathbf{X}_i\|^2 + \lambda_1 \sum_{j=1}^k | \beta_j| + \lambda_2 p(\beta) + \lambda_3 \| Y - \mathbf{X}V^T\gamma\|^2.
+(\hat{\mathbf{A}},\hat{\mathbf{B}}) = \underset{\mathbf{A},\, \mathbf{B}} {\operatorname{arg\,min}}  \| \mathbf{X} - \mathbf{A} \mathbf{B}^{\mathrm{T}} \mathbf{X}\|_2^2 + \lambda \| \mathbf{B}\|_1,
+\end{equation}
+subject to $\mathbf{A}^{\mathrm{T}} \mathbf{A} = I$.  The $\hat{\mathbf{B}}$ obtained from this equation will then satisfy $\hat{\mathbf{B}}_i \propto  \mathbf{V}_i$.  In addition to the sparsity constraint, some sort of clustering or smoothing penalty is required to avoid returning scattered non-zero components, as in \cite{batmanghelich_general_2009}.  This gives us an objective function of the form 
+\begin{equation}
+(\hat{\mathbf{A}},\hat{\mathbf{B}}) = \underset{\mathbf{A},\, \mathbf{B}} {\operatorname{arg\,min}}  \| \mathbf{X} - \mathbf{A} \mathbf{B}^{\mathrm{T}} \mathbf{X}\|_2^2 + \lambda_1 \| \mathbf{B}_j\|_1 + \lambda_2 p(\mathbf{B}),
+\label{eqn:spca}
+\end{equation}
+where $p(\cdot)$ is some penalty that discourages spatially incoherent structures and and $\lambda_1$ and $\lambda_2$ are parameters that control the amount of sparsity and penalty for spatially incoherent structures, respectively.  
+
+To encourage the basis vectors to contain non-zero entries that are grouped into anatomically coherent regions, a smoothing term is often applied to the decomposition.  Current methods in medical image decompositions (\cite{batmanghelich_general_2009,hebiri_smooth-lasso_2011}, following \cite{zdunek_blind_2008}) use a second-order smoothing term, such as $\sum_{j \in \mathcal{N}_i} \left(x_i - x_j\right)^2$, where $\mathcal{N}_i$ is the neighborhood of voxels adjacent to $x_i$.  Second-order smoothing terms, however, penalize large discontinuities much more than small discontinuities.  Because we are interested in enforcing sparseness in our solution, we will necessarily be interested in possibly large non-zero entries next to wide areas of zero entries.  An $\ell_1$ norm on the gradient, such as that adopted in total variation-based denoising \cite{rudin_nonlinear_1992}, is more appropriate for our application, because it penalizes large jumps less than $\ell_2$ norms.  In the context of linear regression, this penalty is known as the ``fused Lasso'' \cite{tibshirani_sparsity_2005}, and has the form $ \lambda_2 \sum_{j \in \mathcal{N}_i} |x_i - x_j|$, when $\mathcal{N}_i$ is the neighborhood of $x_i$.  Adding this penalty explicitly to Equation \ref{eqn:spca} (and adjusting the neighborhood for two-dimensional matrices) gives us 
+\begin{equation}
+(\hat{\mathbf{A}},\hat{\mathbf{B}}) = \underset{\mathbf{A},\, \mathbf{B}} {\operatorname{arg\,min}}  \| \mathbf{X} - \mathbf{A} \mathbf{B}^{\mathrm{T}} \mathbf{X}\|_2^2 + \lambda_1 \| \mathbf{B}\|_1  + \lambda_2 \sum_{j=1}^p \sum_{k=1}^r \sum_{\left\lbrace m,n \mid b_{mn} \in \mathcal{N}_{jk} \right\rbrace} \vert b_{jk} -b_{mn} \vert .
+\end{equation} 
+
+A second extension I propose is to incorporate regression of the projections onto the available clinical data in the objective function.  The clinical data can take the form of cognitive scores, disease state (in logistic regression), or other outcomes one is trying to predict.  This can be considered a generalization of the classification loss term considered by \cite{batmanghelich_general_2009}.  Denoting the regression coefficients $\beta$, so that the standard multivariate regression equation is $Y = \mathbf{X} \beta$, we can then finally write 
+\begin{equation}
+(\hat{\mathbf{A}},\hat{\mathbf{B}}) = \underset{\mathbf{A},\, \mathbf{B}} {\operatorname{arg\,min}}  \| \mathbf{X} - \mathbf{A} \mathbf{B}^{\mathrm{T}} \mathbf{X}\|_2^2 + \lambda_1 \| \mathbf{B}\|_1  + \lambda_2 \sum_{j=1}^p \sum_{k=1}^r \sum_{\left\lbrace m,n \mid b_{mn} \in \mathcal{N}_{jk} \right\rbrace} \vert b_{jk} -b_{mn} \vert + \lambda_3 \| Y - \mathbf{XB} \beta \|_2^2
 \end{equation}
 Incorporating a loss term based on the prediction of the clinical data will encourage the decomposition to be correlated with the clinical outcomes, and changes the unsupervised decomposition to a supervised decomposition reminiscent of partial least squares regression.  
 
-\subsection*{Group Image Decomposition: NEEDS RECONSTRUCTION ERROR TERM!!!}
-One drawback to the proposed image decomposition methods is that they do not offer a possibility of incorporating prior anatomical knowledge into the decomposition.  Because there is no prior anatomical knowledge, there is no guarantee that the decompositions will correspond to anatomically meaningful regions.  Although the penalties proposed do encourage the decomposition to correspond to regions that \textit{can} be anatomically meaningful (coherent, smooth, etc.), the projections may still spread over distinct anatomical regions.  I propose to introduce a modified version of the decomposition that will incorporate prior anatomical knowledge in the form of a labeled atlas.  At the same time, we are still interested in decompositions that do not spread over the entire brain.  We are interested in having a limited number of predefined regions in the brain, but within those regions do not have further sparsity constraints.   In other words, we are interested in region-wise sparsity, but not voxel-wise sparsity.  Denoting each brain region as $\mathbf{V}_j$, with all the brain region vectors incorporated into a matrix $\mathbf{V}$ and the projection of the images onto all the brain regions as $\mathbf{XV}^T$, we then have an objective of the form 
+Another aspect in which we aim to modify current sparse image decompositions is in how prior information is incorporated into the decompositions. Although the penalties proposed do encourage the decomposition to correspond to regions that \textit{can} be anatomically meaningful (coherent, smooth, etc.), the projections may still spread over distinct anatomical regions.  I propose to introduce a modified version of the decomposition that will incorporate prior anatomical knowledge in the form of a labeled atlas.  At the same time, we are still interested in decompositions that do not spread over the entire brain.  We are interested in having a limited number of predefined regions in the brain, but within those regions do not have further sparsity constraints.   In other words, we are interested in region-wise sparsity, but not voxel-wise sparsity.  This problem is a model selection problem, and many techniques have been developed for solving similar problems.  One possible greedy example, based on partial least squares regression and incorporating Tikhonov (or ridge) regularization, is proposed in Algorithm \ref{alg:selection}.  
+
+\begin{algorithm}
+\begin{algorithmic}
+\State \textbf{Input}: $\mathbf{V},\mathbf{X},Y$. \Comment{Input labeled regions, image matrix, clinical outcome.}
+\State $i \leftarrow 1$.  \Comment{ Initialize iterator.}
+\While{adding additional regions improves model}
+\State $\left(Q_i, \hat{\mathbf{B}_i}, \hat{\beta_i} \right) \leftarrow \underset{V_i, \mathbf{B}_i, \beta_i}{\operatorname{arg\,min}} \| V_i V_i^{\mathrm{T}} \mathbf{X} - \mathbf{B}_i \mathbf{B}_i^{\mathrm{T}} V_i V_i^{\mathrm{T}} \mathbf{X}  \|_2^2 + \|Y - V_i V_i^{\mathrm{T}} \mathbf{X} \beta \|_2^2 + \lambda \|\beta_i\|_2^2 $ \Comment{Find region whose partial least squares regression solution gives greatest correlation with output and add to model.} 
+\State $Y \leftarrow Y - V_i V_i^{\mathrm{T}} \mathbf{X} \beta$. \Comment{Retain only clinical data unexplained by current model.}
+\State $i \leftarrow i + 1$. 
+\EndWhile
+\State \textbf{Output}: $\mathbf{Q}, \beta$ \Comment{Return regions selected for model with coefficients for predicting clinical scores.}
+\end{algorithmic}
+\caption{Algorithm for selecting most significant regions for predicting cognitive scores.}
+\label{alg:selection}
+\end{algorithm}
+
+
+
+Denoting each brain region as $\mathbf{V}_j$, with all the brain region vectors incorporated into a matrix $\mathbf{V}$ and the projection of the images onto all the brain regions as $\mathbf{XV}^{\mathrm{T}}$, we then have an objective of the form 
 \begin{equation}
-\| y - \mathbf{XV}^T  \gamma \| + \lambda \| \gamma \|^2 + p(k),
+\| y - \mathbf{XV}^{\mathrm{T}}  \gamma \| + \lambda \| \gamma \|^2 + p(k),
 \end{equation}
 when $k$ is the number of regions incorporated into the model and $p(k)$ is a penalty on the number of regions incorporated into the model.   The $\ell^2$ regularization on $\gamma$ is the standard ridge (or Tikhonov) regularization necessary to avoid degenerate solutions. This objective turns in to a modified model selection problem, and a wide variety of methods are available to find (local) minima.  
 
@@ -136,7 +155,7 @@ LLE works by computing the following three steps:
 \end{enumerate}
 To see how we can extend this method to incorporate sparsity, we will briefly review linear sparse PCA.  The reconstruction errorformulation of PCA seeks to find a vector which will minimize the reconstruction error of the matrix $\mathbf{X}$: 
 \begin{equation}
-\hat{v} = \underset{v}{\operatorname{arg\, min}} \| \mathbf{X} - v v^T \mathbf{X}\|
+\hat{v} = \underset{v}{\operatorname{arg\, min}} \| \mathbf{X} - v v^{\mathrm{T}} \mathbf{X}\|
 \end{equation}
 This equation is similar to the reconstruction weight equation (Equation \ref{eqn:lle_reconstruction}), except that Equation \ref{eqn:lle_reconstruction} only utilizes the data points in the neighborhood of the target image.  From a sparse version of LLE, we would hope to recover both the reconstruction weights (so that we can compute a low-dimensional embedding) and the vector that specifies a section of the original matrix that is most critical for the LLE reconstruction.  In the simplest case, this would correspond to a Boolean vector $v$ whose entries belong to the set $\lbrace 0,1 \rbrace$, which would give us a reconstruction error of the form 
 \begin{equation}
@@ -146,12 +165,12 @@ This equation is similar to the reconstruction weight equation (Equation \ref{eq
  
 Modifying Equation \ref{eqn:lle_reconstruction} in this way gives us 
 \begin{equation}
-\varepsilon_{sparse} \left(W, v\right) = \underset{W, v}{\operatorname{arg\, min}} \sum_i \| X_i - \sum_{j \in \mathcal{N}_i}W_{ij} v v^T X_j \|^2.
+\varepsilon_{sparse} \left(W, v\right) = \underset{W, v}{\operatorname{arg\, min}} \sum_i \| X_i - \sum_{j \in \mathcal{N}_i}W_{ij} v v^{\mathrm{T}} X_j \|^2.
 \label{eqn:sparse_lle}
 \end{equation}
 When $v$ is the identity matrix, Equation \ref{eqn:sparse_lle} is clearly equivalent to Equation \ref{eqn:lle_reconstruction}, but we are interested in incorporating sparsity in the form of an $\ell^1$ penalty on the solution: 
 \begin{equation}
-\varepsilon_{sparse} \left(W, v\right) = \underset{W,v}{\operatorname{arg\, min}}\sum_i \| X_i - \sum_{j \in \mathcal{N}_i}W_{ij} v v^T X_j \|^2 + \|v\|_1,
+\varepsilon_{sparse} \left(W, v\right) = \underset{W,v}{\operatorname{arg\, min}}\sum_i \| X_i - \sum_{j \in \mathcal{N}_i}W_{ij} v v^{\mathrm{T}} X_j \|^2 + \|v\|_1,
 \end{equation}
 where as before, $v$ is orthogonal.  Note that the $v$ matrix is not indexed.  This objective will return a PC-like sparse matrix that is best suited to reconstructing each individual data point from a weighted combination of its neighbors.  The sparse matrix will then indicate which parts of the image, or in our case, which anatomical component, is most important for reconstruction of the original image.  The connections between this decomposition and the linear sparse decomposition methods described above are clear; the difference is that in this case, we only consider the reconstruction of each data point based on the data points (or images) that are most similar to it.  
 

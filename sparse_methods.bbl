@@ -59,6 +59,13 @@ Christos Davatzikos.
   caution when characterizing group differences.
 \newblock {\em {NeuroImage}}, 23(1):17--20, September 2004.
 
+\bibitem{donoho_for_2006}
+{D.L.} Donoho.
+\newblock For most large underdetermined systems of linear equations the
+  minimal ℓ 1-norm solution is also the sparsest solution.
+\newblock {\em Communications on Pure and Applied Mathematics}, 59(6):797--829,
+  2006.
+
 \bibitem{efron_least_2004}
 B.~Efron, T.~Hastie, I.~Johnstone, and R.~Tibshirani.
 \newblock Least angle regression.
@@ -119,6 +126,11 @@ S.~Levy and {P.K.} Fullagar.
 {L.J.P.} van~der Maaten, E.~O. Postma, and H.~J. van~den Herik.
 \newblock {\em Dimensionality Reduction: A Comparative Review}.
 \newblock 2008.
+
+\bibitem{natarajan_sparse_1995}
+{B.K.} Natarajan.
+\newblock Sparse approximate solutions to linear systems.
+\newblock {\em {SIAM} Journal on Computing}, 24(2):227--234, 1995.
 
 \bibitem{raducanu_supervised_2012}
 B.~Raducanu and F.~Dornaika.

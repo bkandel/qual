@@ -13,10 +13,10 @@ Warning--empty publisher in maaten_dimensionality_2008
 Warning--empty year in kaynak_supervised_????
 
 Here's how much of BibTeX's memory you used:
- Cites:                42 out of 750
+ Cites:                44 out of 750
  Fields:              196 out of 5000
- Hash table:         4751 out of 5000
- Strings:             763 out of 4000
- Free string pool:  12364 out of 65000
+ Hash table:         4744 out of 5000
+ Strings:             776 out of 4000
+ Free string pool:  12694 out of 65000
  Wizard functions:   2118 out of 3000
 (There were 2 warnings)

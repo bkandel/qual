@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.10.10)  14 JUN 2012 09:11
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.10.10)  14 JUN 2012 14:36
 entering extended mode
 **sparse_methods.tex
 (C:\Users\Ben\Documents\Research\qual\sparse_methods.tex
@@ -301,14 +301,17 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 40.
- [2] [3] [4] [5]
+ [2] [3] [4]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 100.
+ [5]
 <swiss_roll.jpg, id=31, 1284.8pt x 476.78125pt>
 File: swiss_roll.jpg Graphic file (type jpg)
  <use swiss_roll.jpg>
-Package pdftex.def Info: swiss_roll.jpg used on input line 121.
+Package pdftex.def Info: swiss_roll.jpg used on input line 140.
 (pdftex.def)             Requested size: 284.52756pt x 105.58333pt.
  [6]
-Overfull \hbox (2.2961pt too wide) in paragraph at lines 135--136
+Overfull \hbox (2.2961pt too wide) in paragraph at lines 154--155
 []\OT1/phv/m/n/10.95 With weights fixed, find the low-dimensional em-bed-ding t
 hat most closely ap-prox-i-mates the high-dimensional
  []
@@ -320,10 +323,13 @@ Missing character: There is no ¨ in font phvr7t!
 Missing character: There is no â in font phvr7t!
 Missing character: There is no „ in font phvr7t!
 Missing character: There is no “ in font phvr7t!
+ [9]
 Missing character: There is no â in font phvr7t!
 Missing character: There is no „ in font phvr7t!
 Missing character: There is no “ in font phvr7t!
- [9]
+Missing character: There is no â in font phvr7t!
+Missing character: There is no „ in font phvr7t!
+Missing character: There is no “ in font phvr7t!
 Missing character: There is no â in font phvr7t!
 Missing character: There is no € in font phvr7t!
 Missing character: There is no “ in font phvr7t!
@@ -342,11 +348,11 @@ Missing character: There is no ¼ in font phvr7t!
 Missing character: There is no â in font phvro7t!
 Missing character: There is no € in font phvro7t!
 Missing character: There is no ” in font phvro7t!
+ [10]
 Missing character: There is no Ã in font phvr7t!
 Missing character: There is no ¶ in font phvr7t!
 Missing character: There is no Â in font phvr7t!
 Missing character: There is no © in font phvr7t!
- [10]
 Missing character: There is no â in font phvr7t!
 Missing character: There is no € in font phvr7t!
 Missing character: There is no “ in font phvr7t!
@@ -354,35 +360,35 @@ Missing character: There is no Ã in font phvr7t!
 Missing character: There is no ¶ in font phvr7t!
 Missing character: There is no Ã in font phvr7t!
 Missing character: There is no ¶ in font phvr7t!
-) [11]
-(C:\Users\Ben\Documents\Research\qual\sparse_methods.aux) ) 
+ [11])
+[12] (C:\Users\Ben\Documents\Research\qual\sparse_methods.aux) ) 
 Here is how much of TeX's memory you used:
- 3477 strings out of 494045
- 45659 string characters out of 3148392
- 110656 words of memory out of 3000000
- 6698 multiletter control sequences out of 15000+200000
- 29928 words of font info for 72 fonts, out of 3000000 for 9000
+ 3498 strings out of 494045
+ 45987 string characters out of 3148392
+ 110680 words of memory out of 3000000
+ 6718 multiletter control sequences out of 15000+200000
+ 31561 words of font info for 74 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 34i,14n,45p,1740b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on sparse_methods.pdf (11 pages, 400720 bytes).
+ 34i,14n,45p,1535b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on sparse_methods.pdf (12 pages, 406922 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
