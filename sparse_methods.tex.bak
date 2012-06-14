@@ -49,32 +49,25 @@ To avoid confusion, we will describe the notation we use.  Matrices are denoted 
  
 \section*{Specific Aim I: Regression-Based and Grouped Sparse Linear Medical Image Decomposition}
 \subsection*{Regression-Based Image Decomposition}
-In order to fully appreciate how clinical data can be used to guide medical image decomposition, we will begin by briefly reviewing methods for sparse PCA decompositions.  Once we have shown how unsupervised sparse PCA decompositions are formulated, we will extend the decomposition to situations in which we have outcome data of a continuous variable. 
-
+In order to fully appreciate how clinical data can be used to guide medical image decomposition, we will begin by briefly reviewing methods for spar decompositions 
 We represent a set of $n$ mean-centered medical images, each containing $p$ voxels, as an $n \times p$ matrix $\mathbf{X} \in \mathbb{R}^{n \times p}$.  We seek a decomposition of this matrix into a loading matrix $\mathbf{W} \in \mathbb{R}^{n \times r}$ and a basis matrix $\mathbf{V} \in \mathbb{R}^{r \times p}$ so that 
 \begin{equation}
 \mathbf{X} \approx \mathbf{WV}.
 \end{equation}
-Two  common ways of formulating the PCA objective are finding the projection matrix$\mathbf{V}$ that maximizes the variance of the data matrix,
+One way of formulating PCA is to search for the projections $V_i$ that maximize the variance of the data matrix: 
 \begin{equation}
-\hat{\mathbf{V}} =  \underset{\mathbf{V}}{\operatorname{arg\,max}} \, \| \mathbf{XV} \|_2^2,
+\hat{v}_i =  \underset{v_i}{\operatorname{arg\,max}} \, \| \mathbf{X}v_i \|,
 \end{equation}
-and finding the projection matrix that minimizes the reconstruction error, 
+in which case the loadings are given by the projections of the data matrix onto the principal components
 \begin{equation}
-\mathbf{\hat{V}} = \underset{\mathbf{V}} {\operatorname{arg \,  min}} \, \| \mathbf{X} - \mathbf{VV}^T \mathbf{X}\|_2^2,
-\label{eqn:reconstruction_error}
+\mathbf{W} = \mathbf{X} \mathbf{V}^T.
 \end{equation}
-subject to the orthogonality constraint $\mathbf{V}^T\mathbf{V}=I$ \cite{hastie_elements_2009}.
-The loading matrix is given by the projections of the data matrix onto the principal components
-\begin{equation}
-\mathbf{W} = \mathbf{X} \mathbf{V}^T,
-\end{equation}
-with matrix dimensions as before. 
-An alternative derivation of the principal components is by minimizing the reconstruction error : 
+An alternative derivation of the principal components is by minimizing the reconstruction error \cite{hastie_elements_2009}: 
 \begin{equation}
 \mathbf{\hat{V}} = \underset{V} {\operatorname{arg \,  min}} \, \| \mathbf{X} - \mathbf{VV}^T \mathbf{X}\|,
+\label{eqn:reconstruction_error}
 \end{equation}
-  To enforce sparsity on this decomposition, Zou \cite{zou_sparse_2006} introduces the $\ell_1$ penalty into Equation \ref{eqn:reconstruction_error}.  Introducing a penalty on the $\ell^1$ norm of a solution is a standard convex relaxation to a penalty on the $\ell^0$ ``norm,'' because optimizing over an $\ell^0$ penalty is an NP-hard problem.  (Donoho--citation for l1 here.) To do this, he uses two matrices, $\alpha$ and $\beta$, for use in the reconstruction, and then imposes orthogonality on $\alpha$ and sparsity on $\beta$: 
+subject to the orthogonality constraint $\mathbf{V}^T\mathbf{V}=I$.  To enforce sparsity on this decomposition, Zou \cite{zou_sparse_2006} introduces the $\ell_1$ penalty into Equation \ref{eqn:reconstruction_error}.  Introducing a penalty on the $\ell^1$ norm of a solution is a standard convex relaxation to a penalty on the $\ell^0$ ``norm,'' because optimizing over an $\ell^0$ penalty is an NP-hard problem.  (Donoho--citation for l1 here.) To do this, he uses two matrices, $\alpha$ and $\beta$, for use in the reconstruction, and then imposes orthogonality on $\alpha$ and sparsity on $\beta$: 
 \begin{equation}
 (\hat{\alpha},\hat{\beta}) = \underset{\alpha,\, \beta} {\operatorname{arg\,min}} \sum_{i=i}^n \| \mathbf{X}_i - \alpha \beta^T \mathbf{X}_i\|^2 + \lambda \sum_{j=1}^k | \beta_j|,
 \end{equation}

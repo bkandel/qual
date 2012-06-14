@@ -1,9 +1,269 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{alter_singular_2000}
+O.~Alter, {P.O.} Brown, and D.~Botstein.
+\newblock Singular value decomposition for {genome-Wide} expression data
+  processing and modeling.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 97(18):10101--10106, 2000.
 
 \bibitem{ashburner_voxel-based_2000}
 J~Ashburner and K~J Friston.
 \newblock Voxel-based morphometry--the methods.
 \newblock {\em {NeuroImage}}, 11(6 Pt 1):805--821, June 2000.
 \newblock {PMID:} 10860804.
+
+\bibitem{batmanghelich_regularized_2011}
+N.~Batmanghelich, A.~Dong, B.~Taskar, and C.~Davatzikos.
+\newblock Regularized tensor factorization for multi-modality medical image
+  classification.
+\newblock {\em Medical image computing and computer-assisted intervention :
+  {MICCAI} ... International Conference on Medical Image Computing and
+  {Computer-Assisted} Intervention}, 14(Pt 3):17--24, 2011.
+
+\bibitem{batmanghelich_general_2009}
+N.~Batmanghelich, B.~Taskar, and C.~Davatzikos.
+\newblock A general and unifying framework for feature construction, in
+  image-based pattern classification.
+\newblock {\em Information processing in medical imaging : proceedings of the
+  ... conference}, 21:423--434, 2009.
+
+\bibitem{belhumeur_eigenfaces_1997}
+{P.N.} Belhumeur, {J.P.} Hespanha, and {D.J.} Kriegman.
+\newblock Eigenfaces vs. fisherfaces: Recognition using class specific linear
+  projection.
+\newblock {\em {IEEE} Transactions on Pattern Analysis and Machine
+  Intelligence}, 19(7):711--720, 1997.
+
+\bibitem{belkin_laplacian_2003}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps for dimensionality reduction and data
+  representation.
+\newblock {\em Neural Computation}, 15(6):1373--1396, 2003.
+
+\bibitem{bowie_administration_2006}
+Christopher~R Bowie and Philip~D Harvey.
+\newblock Administration and interpretation of the trail making test.
+\newblock {\em Nature Protocols}, 1(5):2277--2281, 2006.
+
+\bibitem{candes_robust_2006}
+{E.J.} Candès, J.~Romberg, and T.~Tao.
+\newblock Robust uncertainty principles: Exact signal reconstruction from
+  highly incomplete frequency information.
+\newblock {\em {IEEE} Transactions on Information Theory}, 52(2):489--509,
+  2006.
+
+\bibitem{davatzikos_why_2004}
+Christos Davatzikos.
+\newblock Why voxel-based morphometric analysis should be used with great
+  caution when characterizing group differences.
+\newblock {\em {NeuroImage}}, 23(1):17--20, September 2004.
+
+\bibitem{efron_least_2004}
+B.~Efron, T.~Hastie, I.~Johnstone, and R.~Tibshirani.
+\newblock Least angle regression.
+\newblock {\em The Annals of statistics}, 32(2):407---499, 2004.
+
+\bibitem{geng_supervised_2005}
+X.~Geng, {D.-C.} Zhan, and {Z.-H.} Zhou.
+\newblock Supervised nonlinear dimensionality reduction for visualization and
+  classification.
+\newblock {\em {IEEE} Transactions on Systems, Man, and Cybernetics, Part B:
+  Cybernetics}, 35(6):1098--1107, 2005.
+
+\bibitem{hastie_elements_2009}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction, Second Edition}.
+\newblock Springer, 2nd ed. 2009. corr. 3rd printing 5th printing. edition,
+  February 2009.
+
+\bibitem{hebiri_smooth-lasso_2011}
+M.~Hebiri and S.~van~de Geer.
+\newblock The smooth-lasso and other ℓ 1 + ℓ 2-penalized methods.
+\newblock {\em Electronic Journal of Statistics}, 5:1184--1226, 2011.
+
+\bibitem{holter_fundamental_2000}
+{N.S.} Holter, M.~Mitra, A.~Maritan, M.~Cieplak, {J.R.} Banavar, and {N.V.}
+  Fedoroff.
+\newblock Fundamental patterns underlying gene expression profiles: Simplicity
+  from complexity.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 97(15):8409--8414, 2000.
+
+\bibitem{hoyer_non-negative_2004}
+P.~O Hoyer.
+\newblock Non-negative matrix factorization with sparseness constraints.
+\newblock {\em The Journal of Machine Learning Research}, 5:1457--1469, 2004.
+
+\bibitem{jolliffe_modified_2003}
+{I.T.} Jolliffe, {N.T.} Trendafilov, and M.~Uddin.
+\newblock A modified principal component technique based on the {LASSO}.
+\newblock {\em Journal of Computational and Graphical Statistics},
+  12(3):531–547, 2003.
+
+\bibitem{jolliffe_simplified_2000}
+{I.T.} Jolliffe and M.~Uddin.
+\newblock The simplified component technique: An alternative to rotated
+  principal components.
+\newblock {\em Journal of Computational and Graphical Statistics},
+  9(4):689--710, 2000.
+
+\bibitem{levy_reconstruction_1981}
+S.~Levy and {P.K.} Fullagar.
+\newblock Reconstruction of a sparse spike train from a portion of its spectrum
+  and application to high-resolution deconvolution.
+\newblock {\em Geophysics}, 46(9):1235--1243, 1981.
+
+\bibitem{maaten_dimensionality_2008}
+{L.J.P.} van~der Maaten, E.~O. Postma, and H.~J. van~den Herik.
+\newblock {\em Dimensionality Reduction: A Comparative Review}.
+\newblock 2008.
+
+\bibitem{raducanu_supervised_2012}
+B.~Raducanu and F.~Dornaika.
+\newblock A supervised non-linear dimensionality reduction approach for
+  manifold learning.
+\newblock {\em Pattern Recognition}, 45(6):2432--2444, 2012.
+
+\bibitem{kaynak_supervised_????}
+Dick Ridder, Olga Kouropteva, Oleg Okun, Matti Pietikäinen, and Robert P.~W.
+  Duin.
+\newblock Supervised locally linear embedding.
+\newblock In Okyay Kaynak, Ethem Alpaydin, Erkki Oja, and Lei Xu, editors, {\em
+  Artificial Neural Networks and Neural Information Processing —
+  {ICANN/ICONIP} 2003}, volume 2714, pages 333--341. Springer Berlin
+  Heidelberg, Berlin, Heidelberg.
+
+\bibitem{roweis_nonlinear_2000}
+Sam~T Roweis and Lawrence~K Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock {\em Science}, 290(5500):2323--2326, December 2000.
+
+\bibitem{rudin_nonlinear_1992}
+L.~I Rudin, S.~Osher, and E.~Fatemi.
+\newblock Nonlinear total variation based noise removal algorithms.
+\newblock {\em Physica D: Nonlinear Phenomena}, 60(1-4):259–268, 1992.
+
+\bibitem{scholkopf_kernel_1997}
+Bernhard Schölkopf, Alexander Smola, and {Klaus-Robert} Müller.
+\newblock Kernel principal component analysis.
+\newblock In Wulfram Gerstner, Alain Germond, Martin Hasler, and {Jean-Daniel}
+  Nicoud, editors, {\em Artificial Neural Networks — {ICANN'97}}, volume 1327
+  of {\em Lecture Notes in Computer Science}, pages 583--588. Springer Berlin /
+  Heidelberg, 1997.
+
+\bibitem{schwarz_estimating_1978}
+G.~Schwarz.
+\newblock Estimating the dimension of a model.
+\newblock {\em The annals of statistics}, 6(2):461--464, 1978.
+
+\bibitem{sethian_fast_1996}
+J~A Sethian.
+\newblock A fast marching level set method for monotonically advancing fronts.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  93(4):1591--1595, February 1996.
+
+\bibitem{sjostrand_sparse_2007}
+K.~Sjostrand, E.~Rostrup, C.~Ryberg, R.~Larsen, C.~Studholme, H.~Baezner,
+  J.~Ferro, F.~Fazekas, L.~Pantoni, D.~Inzitari, and G.~Waldemar.
+\newblock Sparse decomposition and modeling of anatomical shape variation.
+\newblock {\em Medical Imaging, {IEEE} Transactions on}, 26(12):1625 --1635,
+  December 2007.
+
+\bibitem{teipel_multivariate_2007}
+{S.J.} Teipel, C.~Born, M.~Ewers, {A.L.W.} Bokde, {M.F.} Reiser, {H.-J.}
+  Möller, and H.~Hampel.
+\newblock Multivariate deformation-based analysis of brain atrophy to predict
+  alzheimer's disease in mild cognitive impairment.
+\newblock {\em {NeuroImage}}, 38(1):13--24, 2007.
+
+\bibitem{tenenbaum_global_2000}
+Joshua~B Tenenbaum, Vin~De Silva, and John~C Langford.
+\newblock A global geometric framework for nonlinear dimensionality reduction.
+\newblock {\em Science}, 290(5500):2319--2323, December 2000.
+
+\bibitem{tibshirani_regression_1996}
+Robert Tibshirani.
+\newblock Regression shrinkage and selection via the lasso.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  {(Methodological)}}, 58(1):267--288, January 1996.
+\newblock {ArticleType:} research-article / Full publication date: 1996 /
+  Copyright © 1996 Royal Statistical Society.
+
+\bibitem{tibshirani_sparsity_2005}
+Robert Tibshirani, Michael Saunders, Saharon Rosset, Ji~Zhu, and Keith Knight.
+\newblock Sparsity and smoothness via the fused lasso.
+\newblock {\em Journal of the Royal Statistical Society: Series B
+  {(Statistical} Methodology)}, 67(1):91–108, 2005.
+
+\bibitem{turk_eigenfaces_1991}
+M.~Turk and A.~Pentland.
+\newblock Eigenfaces for recognition.
+\newblock {\em Journal of Cognitive Neuroscience}, 3(1):71--86, 1991.
+
+\bibitem{witten_penalized_2009}
+Daniela~M Witten, Robert Tibshirani, and Trevor Hastie.
+\newblock A penalized matrix decomposition, with applications to sparse
+  principal components and canonical correlation analysis.
+\newblock {\em Biostatistics {(Oxford}, England)}, 10(3):515--534, July 2009.
+\newblock {PMID:} 19377034.
+
+\bibitem{witten_extensions_2009}
+{D.M.} Witten and {R.J.} Tibshirani.
+\newblock Extensions of sparse canonical correlation analysis with applications
+  to genomic data.
+\newblock {\em Statistical Applications in Genetics and Molecular Biology},
+  8(1), 2009.
+
+\bibitem{wolz_leap:_2010}
+R.~Wolz, P.~Aljabar, {J.V.} Hajnal, A.~Hammers, and D.~Rueckert.
+\newblock {LEAP:} learning embeddings for atlas propagation.
+\newblock {\em {NeuroImage}}, 49(2):1316--1325, 2010.
+
+\bibitem{wolz_nonlinear_2012}
+R.~Wolz, P.~Aljabar, {J.V.} Hajnal, J.~Lötjönen, and D.~Rueckert.
+\newblock Nonlinear dimensionality reduction combining {MR} imaging with
+  non-imaging information.
+\newblock {\em Medical Image Analysis}, 16(4):819--830, 2012.
+
+\bibitem{yang_extended_2002}
+{M.-H.} Yang.
+\newblock Extended isomap for classification.
+\newblock In {\em Proceedings - International Conference on Pattern
+  Recognition}, volume~16, pages 615--618, 2002.
+
+\bibitem{yeung_principal_2001}
+{K.Y.} Yeung and {W.L.} Ruzzo.
+\newblock Principal component analysis for clustering gene expression data.
+\newblock {\em Bioinformatics}, 17(9):763--774, 2001.
+
+\bibitem{yuan_model_2006}
+M.~Yuan and Y.~Lin.
+\newblock Model selection and estimation in regression with grouped variables.
+\newblock {\em Journal of the Royal Statistical Society. Series B: Statistical
+  Methodology}, 68(1):49--67, 2006.
+
+\bibitem{zdunek_blind_2008}
+Rafal Zdunek and Andrzej Cichocki.
+\newblock Blind image separation using nonnegative matrix factorization with
+  gibbs smoothing.
+\newblock In Masumi Ishikawa, Kenji Doya, Hiroyuki Miyamoto, and Takeshi
+  Yamakawa, editors, {\em Neural Information Processing}, volume 4985 of {\em
+  Lecture Notes in Computer Science}, pages 519--528. Springer Berlin /
+  Heidelberg, 2008.
+
+\bibitem{zhang_deformable_2011}
+S.~Zhang, Y.~Zhan, M.~Dewan, J.~Huang, {D.N.} Metaxas, and {X.S.} Zhou.
+\newblock Deformable segmentation via sparse shape representation.
+\newblock {\em Medical image computing and computer-assisted intervention :
+  {MICCAI} ... International Conference on Medical Image Computing and
+  {Computer-Assisted} Intervention}, 14(Pt 2):451--458, 2011.
+
+\bibitem{zou_sparse_2006}
+H.~Zou, T.~Hastie, and R.~Tibshirani.
+\newblock Sparse principal component analysis.
+\newblock {\em Journal of computational and graphical statistics},
+  15(2):265---286, 2006.
 
 \end{thebibliography}

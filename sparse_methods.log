@@ -1,20 +1,27 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.6.22)  10 JUN 2012 22:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2011.10.10)  14 JUN 2012 09:11
 entering extended mode
- %&-line parsing enabled.
 **sparse_methods.tex
-(./sparse_methods.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/nih/nih.cls
+(C:\Users\Ben\Documents\Research\qual\sparse_methods.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\nih\nih.cls"
 Document Class: nih 2005/06/01 NIH PHS 398 as of June 2005
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -28,20 +35,23 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
-Package: geometry 2008/12/21 v4.2 Page Geometry
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
 \Gm@cntv=\count88
@@ -50,10 +60,14 @@ Package ifvtex Info: VTeX not detected.
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
-(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -64,24 +78,24 @@ Package ifvtex Info: VTeX not detected.
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
-\ex@=\dimen107
+\ex@=\dimen111
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen108
+\pmbraise@=\dimen112
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count90
@@ -96,7 +110,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen109
+\big@size=\dimen113
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count95
@@ -109,12 +123,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count100
 \maxfields@=\count101
 \andhelp@=\toks18
-\eqnshift@=\dimen110
-\alignsep@=\dimen111
-\tagshift@=\dimen112
-\tagwidth@=\dimen113
-\totwidth@=\dimen114
-\lineht@=\dimen115
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
 \@envbody=\toks19
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -122,119 +136,253 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 ))
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\helvet.sty"
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 )
-(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
-Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+Package: algpseudocode 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count102
+\c@ALG@rem=\count103
+\c@ALG@nested=\count104
+\ALG@tlm=\skip55
+\ALG@thistlm=\skip56
+\c@ALG@Lnr=\count105
+\c@ALG@blocknr=\count106
+\c@ALG@storecount=\count107
+\c@ALG@tmpcounter=\count108
+\ALG@tmplength=\skip57
 )
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks21
+\float@box=\box28
+\@float@everytoks=\toks22
+\@floatcapt=\box29
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count110
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./sparse_methods.aux)
-\openout1 = `sparse_methods.aux'.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 12.
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count111
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(C:\Users\Ben\Documents\Research\qual\sparse_methods.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 15.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
-*geometry auto-detecting driver*
-*geometry detected driver: pdftex*
--------------------- Geometry parameters
-paper: letterpaper
-landscape: --
-twocolumn: --
-twoside: --
-asymmetric: --
-h-parts: 36.135pt, 542.02501pt, 36.135pt
-v-parts: 36.135pt, 722.7pt, 36.135pt
-hmarginratio: --
-vmarginratio: --
-lines: --
-heightrounded: --
-bindingoffset: 0.0pt
-truedimen: --
-includehead: true
-includefoot: true
-includemp: --
-driver: pdftex
--------------------- Page layout dimensions and switches
-\paperwidth  614.295pt
-\paperheight 794.96999pt
-\textwidth  542.02501pt
-\textheight 655.7pt
-\oddsidemargin  -36.135pt
-\evensidemargin -36.135pt
-\topmargin  -36.135pt
-\headheight 14.5pt
-\headsep    25.0pt
-\footskip   30.0pt
-\marginparwidth 65.0pt
-\marginparsep   11.0pt
-\columnsep  10.0pt
-\skip\footins  9.0pt plus 4.0pt minus 2.0pt
-\hoffset 0.0pt
-\voffset 0.0pt
-\mag 1000
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=655.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-36.135pt
+* \headheight=14.5pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(1in=72.27pt, 1cm=28.45pt)
------------------------
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen122
+\scratchbox=\box30
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen123
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks25
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 21.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 21.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 24.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sparse_methods.bbl)
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 44.
- [2] (./sparse_methods.aux) ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 40.
+ [2] [3] [4] [5]
+<swiss_roll.jpg, id=31, 1284.8pt x 476.78125pt>
+File: swiss_roll.jpg Graphic file (type jpg)
+ <use swiss_roll.jpg>
+Package pdftex.def Info: swiss_roll.jpg used on input line 121.
+(pdftex.def)             Requested size: 284.52756pt x 105.58333pt.
+ [6]
+Overfull \hbox (2.2961pt too wide) in paragraph at lines 135--136
+[]\OT1/phv/m/n/10.95 With weights fixed, find the low-dimensional em-bed-ding t
+hat most closely ap-prox-i-mates the high-dimensional
+ []
+
+[7 <C:/Users/Ben/Documents/Research/qual/swiss_roll.jpg>] [8]
+(C:\Users\Ben\Documents\Research\qual\sparse_methods.bbl
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¨ in font phvr7t!
+Missing character: There is no â in font phvr7t!
+Missing character: There is no „ in font phvr7t!
+Missing character: There is no “ in font phvr7t!
+Missing character: There is no â in font phvr7t!
+Missing character: There is no „ in font phvr7t!
+Missing character: There is no “ in font phvr7t!
+ [9]
+Missing character: There is no â in font phvr7t!
+Missing character: There is no € in font phvr7t!
+Missing character: There is no “ in font phvr7t!
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¤ in font phvr7t!
+Missing character: There is no â in font phvro7t!
+Missing character: There is no € in font phvro7t!
+Missing character: There is no ” in font phvro7t!
+Missing character: There is no â in font phvr7t!
+Missing character: There is no € in font phvr7t!
+Missing character: There is no “ in font phvr7t!
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¶ in font phvr7t!
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¼ in font phvr7t!
+Missing character: There is no â in font phvro7t!
+Missing character: There is no € in font phvro7t!
+Missing character: There is no ” in font phvro7t!
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¶ in font phvr7t!
+Missing character: There is no Â in font phvr7t!
+Missing character: There is no © in font phvr7t!
+ [10]
+Missing character: There is no â in font phvr7t!
+Missing character: There is no € in font phvr7t!
+Missing character: There is no “ in font phvr7t!
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¶ in font phvr7t!
+Missing character: There is no Ã in font phvr7t!
+Missing character: There is no ¶ in font phvr7t!
+) [11]
+(C:\Users\Ben\Documents\Research\qual\sparse_methods.aux) ) 
 Here is how much of TeX's memory you used:
- 1883 strings out of 495061
- 22783 string characters out of 1182621
- 76547 words of memory out of 3000000
- 5045 multiletter control sequences out of 15000+50000
- 26175 words of font info for 59 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 35i,13n,45p,1325b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.
-enc}</usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
-exmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/font
-s/type1/urw/helvetic/uhvro8a.pfb>
-Output written on sparse_methods.pdf (2 pages, 33913 bytes).
+ 3477 strings out of 494045
+ 45659 string characters out of 3148392
+ 110656 words of memory out of 3000000
+ 6698 multiletter control sequences out of 15000+200000
+ 29928 words of font info for 72 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 34i,14n,45p,1740b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on sparse_methods.pdf (11 pages, 400720 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

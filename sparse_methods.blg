@@ -1,45 +1,22 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is 8-bit Big BibTeX version 0.99d
+Implementation:  Microsoft(R) C/C++ for Win32
+Release version: 3.71 (31 May 2005)
+
+The 8-bit codepage and sorting file: 88591lat.csf
 The top-level auxiliary file: sparse_methods.aux
 The style file: plain.bst
+Reallocated glb_str_ptr (elt_size=4) to 10 items from 0.
+Reallocated global_strs (elt_size=1001) to 10 items from 0.
+Reallocated glb_str_end (elt_size=4) to 10 items from 0.
 Database file #1: kandel_lib.bib
-You've used 1 entry,
-            2118 wiz_defined-function locations,
-            506 strings with 4150 characters,
-and the built_in function-call counts, 364 in all, are:
-= -- 37
-> -- 13
-< -- 0
-+ -- 5
-- -- 4
-* -- 30
-:= -- 66
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 5
-chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 28
-format.name$ -- 4
-if$ -- 71
-int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 9
-num.names$ -- 2
-pop$ -- 2
-preamble$ -- 1
-purify$ -- 4
-quote$ -- 0
-skip$ -- 8
-stack$ -- 0
-substring$ -- 30
-swap$ -- 1
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 4
-width$ -- 2
-write$ -- 15
+Warning--empty publisher in maaten_dimensionality_2008
+Warning--empty year in kaynak_supervised_????
+
+Here's how much of BibTeX's memory you used:
+ Cites:                42 out of 750
+ Fields:              196 out of 5000
+ Hash table:         4751 out of 5000
+ Strings:             763 out of 4000
+ Free string pool:  12364 out of 65000
+ Wizard functions:   2118 out of 3000
+(There were 2 warnings)
